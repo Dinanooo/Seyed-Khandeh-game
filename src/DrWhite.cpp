@@ -73,7 +73,7 @@ void DoctorWhite::useAbility1(class Team& myteam, class Team& enemyteam)
 
     myteam.useEnergy(ASPIRIN_ENERGY);
     targetAlly->Heal(40);
-    cout << "Dr.white healed " << targetAlly->getName() << "40 HP." << endl;
+    cout << "Dr.white healed " << targetAlly->getName() << " 40 HP." << endl;
     
     vector<Hero*> aliveEnemies;
     for(int i=0 ; i<3 ; i++)

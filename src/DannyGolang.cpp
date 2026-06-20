@@ -131,7 +131,7 @@ void DannyGolang::useAbility1(class Team& myteam, class Team& enemyteam)
     myteam.useEnergy(LOCK_ENERGY);
     double damage = (20)*(lockDamageRatio);
     targetEnemy->takeDamage(damage);
-    cout << "Danny Golang attacked " << targetEnemy->getName() << "for " << damage << " HP!" << endl;
+    cout << "Danny Golang attacked " << targetEnemy->getName() << " for " << damage << "HP!" << endl;
 
     lastLockTarget = targetEnemy;
     lockDamageRatio *= 1.6;
@@ -180,7 +180,7 @@ void DannyGolang::useAbility2(class Team& myteam, class Team& enemyteam)
     else
     {
         highestHPenemy->takeDamage(ELEPHANT_ENERGY);
-        cout << highestHPenemy->getName() << "was attacked again!" << endl;
+        cout << highestHPenemy->getName() << " was attacked again!" << endl;
     }
 }
 

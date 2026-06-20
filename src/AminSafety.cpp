@@ -77,7 +77,7 @@ void AminSafety::useAbility1(class Team& myteam, class Team& enemyteam)
         damage = damage * 2;
     }
     targetEnemy->takeDamage(damage);
-    cout << "Amin Safety attacked " << targetEnemy->getName() << " for" << damage <<" HP!" << endl;
+    cout << "Amin Safety attacked " << targetEnemy->getName() << " for" << damage << "HP!" << endl;
 }
 
 void AminSafety::useAbility2(class Team& myteam, class Team& enemyteam)
@@ -111,7 +111,7 @@ void AminSafety::useAbility2(class Team& myteam, class Team& enemyteam)
 
     if(!targetAlly->isAlive())
     {
-        cout << targetAlly->getName() << "has been killed by his own ally Amin Safety!" << endl;
+        cout << targetAlly->getName() << " has been killed by his own ally Amin Safety!" << endl;
     }
     Heal(75);
     cout << "Amin Safety healed himself for 75 HP!" << endl;
@@ -167,7 +167,7 @@ void AminSafety::useSpecialAbility(class Team& myteam, class Team& enemyteam)
     {
         selectedAllies.push_back(aliveAllies[0]);
         selectedAllies.push_back(aliveAllies[0]);
-        cout << "onlu one ally is alive and will be hit twice!" << endl;
+        cout << "only one ally is alive and will be hit twice!" << endl;
     }
     else
     {
