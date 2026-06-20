@@ -1,0 +1,3 @@
+C:/Users/Riz Pardazandeh/Documents/SeyedKhandeh/build/CMakeFiles/app.dir
+C:/Users/Riz Pardazandeh/Documents/SeyedKhandeh/build/CMakeFiles/edit_cache.dir
+C:/Users/Riz Pardazandeh/Documents/SeyedKhandeh/build/CMakeFiles/rebuild_cache.dir
