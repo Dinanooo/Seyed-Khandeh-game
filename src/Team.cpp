@@ -75,7 +75,7 @@ void Team::showTeam()
     {
         cout << i << "_ " << hero->getName() 
         << " HP: " << hero->getHP() 
-        << "| " << hero->getMaxHP()
+        << "/" << hero->getMaxHP()
         << (hero->isAlive() ? "[Alive]" : "[Dead]") << endl;
         i++;
     }

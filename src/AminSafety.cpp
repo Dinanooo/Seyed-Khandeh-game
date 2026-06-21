@@ -77,7 +77,7 @@ void AminSafety::useAbility1(class Team& myteam, class Team& enemyteam)
         damage = damage * 2;
     }
     targetEnemy->takeDamage(damage);
-    cout << "Amin Safety attacked " << targetEnemy->getName() << " for" << damage << "HP!" << endl;
+    cout << "Amin Safety attacked " << targetEnemy->getName() << " for " << damage << "HP!" << endl;
 }
 
 void AminSafety::useAbility2(class Team& myteam, class Team& enemyteam)

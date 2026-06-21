@@ -101,7 +101,6 @@ void Hero::AddDamageBuff(int percent, int turns)
     buff.percent = percent;
     buff.turnsLeft = turns;
     damagebuffs.push_back(buff);
-    cout << Name << " gained +" << percent << "% damage buff for" << turns << " turns" << endl;
 }
 
 int Hero::getDamageBuffPercent() const

@@ -117,8 +117,8 @@ void DoctorWhite::useAbility2(class Team& myteam, class Team& enemyteam)
     Hero* targetAlly = aliveAllies[randomAlly];
 
     myteam.useEnergy(DOPING_ENERGY);
-    targetAlly->AddDamageBuff(20, 2);
     cout << "Dr.White used doping on " << targetAlly->getName() << endl;
+    targetAlly->AddDamageBuff(20, 2);
 }
 
 void DoctorWhite::useSpecialAbility(class Team& myteam, class Team& enemyteam)

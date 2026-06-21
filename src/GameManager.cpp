@@ -497,11 +497,11 @@ void GameManager::RunGame()
             applyEndOfTurnEffects(team1);
             applyEndOfTurnEffects(team2);
         }
-        displayGameStatus();
         if(!gameIsOver)
         {
             nextRound();
         }
+        displayGameStatus();
     }
     EndGame();
 }
