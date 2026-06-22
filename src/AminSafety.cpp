@@ -7,7 +7,7 @@ const int AminSafety::LAST_BULLET_ENERGY = 3;
 const int AminSafety::SELF_HIT_ENERGY = 3;
 const int AminSafety::SPECIAL_ENERGY = 4;
 
-AminSafety::AminSafety() : Hero("AminSafety", 500, 3)
+AminSafety::AminSafety() : Hero("AminSafety", 500, 3), lastBulletRatio(1)
 {
     ragePhrase = "one...two...three...boom...who's left? doesn't matter";
 }
@@ -71,14 +71,20 @@ void AminSafety::useAbility1(class Team& myteam, class Team& enemyteam)
     Hero* targetEnemy = aliveEnemies[randomEnemy];
 
     myteam.useEnergy(LAST_BULLET_ENERGY);
-    int damage = 55;
+
+    int damage = (55)*(lastBulletRatio);
     if(targetEnemy->getHP() <= damage)
     {
-        damage = damage * 2;
+        if(lastBulletRatio < 4)
+        {
+            lastBulletRatio *= 2;
+        }
+        cout << "Amin safety killed " << targetEnemy->getName() << endl;
     }
     targetEnemy->takeDamage(damage);
     cout << "Amin Safety attacked " << targetEnemy->getName() << " for " << damage << "HP!" << endl;
 }
+
 
 void AminSafety::useAbility2(class Team& myteam, class Team& enemyteam)
 {

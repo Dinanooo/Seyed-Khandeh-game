@@ -12,6 +12,7 @@ class AminSafety : public Hero
         static const int LAST_BULLET_ENERGY;
         static const int SELF_HIT_ENERGY;
         static const int SPECIAL_ENERGY;
+        int lastBulletRatio;
 
     public:
         AminSafety();
