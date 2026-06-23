@@ -149,7 +149,7 @@ void DoctorWhite::useSpecialAbility(class Team& myteam, class Team& enemyteam)
     myteam.useEnergy(SPECIAL_ENERGY);
     performRage();
     deadHero->Revive(REVIVE_UP);
-    cout << deadHero->getName() << " has been revived all negative effects are removed!" << endl;
+    cout << deadHero->getName() << " has been revived." << endl;
     counter = CountSpecialAbi;
 }
 
